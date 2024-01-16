@@ -1,0 +1,45 @@
+.container{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+html{
+    background-color: blueviolet;
+    font-family: 'Baloo Bhai';
+    
+}
+h1{
+    font-weight: bold;
+}
+h3{
+    /* padding-bottom: 5px; */
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#cal{
+    border: 2px solid black;
+    display: block;
+    width: 22%;
+    margin: auto;
+    background-color: yellow;
+}
+button{
+    background-color: yellowgreen;
+    width: 150px;
+    height: 35px;
+    margin-top: 10px;
+    font-size:20px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: black;
+    color: yellowgreen;
+}
+#results{
+    padding: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+  text-align: center;
+  color: rgb(138, 41, 41);
+}

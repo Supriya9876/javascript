@@ -1,0 +1,5 @@
+alert('test')
+const ele=document.querySelector('.parent')
+console.log(ele)
+console.log(ele.children)
+console.log(ele.children[1].innerHTML)

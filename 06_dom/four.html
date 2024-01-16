@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&C</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // function addLanguage(langName) {
+    //     const li=document.createElement('li');
+    //     li.innerHTML=`${langName}`
+    //     // If we create an innerHTML, then the whole tree traversed,So it is the most costliest way to add
+    //     document.querySelector('.language').appendChild(li)
+    // }
+    // addLanguage('python')
+    // addLanguage('java')
+
+    function optiAdd(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li);
+    }
+    optiAdd('java')
+    optiAdd('python')
+
+    // Edit
+    // const secondLang=document.querySelector("li:nth-child(2)")
+// secondLang.innerHTML="HTML"
+// const newLi=document.createElement('li')
+// newLi.textContent="MOJO"
+// secondLang.replaceWith(newLi)
+
+// const firstLang=document.querySelector("li:nth-child(1)")
+// // firstLang.innerHTML="TypeScript"
+// const firstLi=document.createElement("li")
+// firstLi.textContent="TypeScript"
+// firstLang.replaceWith(firstLi)
+
+    // const thirdEle=document.querySelector("li:nth-child(3)")
+    // // thirdEle.innerHTML="CSS"
+    // const newThird=document.createElement("li")
+    // newThird.textContent="CSS"
+    // thirdEle.replaceWith(newThird)
+    // const thirdEle=document.querySelector("li:nth-Child(1)")
+    // thirdEle.outerHTML="<li>TypeScript</li>"
+
+    // Remove
+    const lastLang=document.querySelector("li:last-child")
+    lastLang.remove()
+
+</script>
+</html>
